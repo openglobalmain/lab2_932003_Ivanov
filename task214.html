@@ -1,13 +1,31 @@
-<DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <meta charset="utf-8">
         <title>Task 2.14 </title>
     </head>
     <body> 
-        <div style = "float: left; position: static; width:100%; border:2px solid; border-color: green; background-color: aqua;">
+        <style>
+                @media(min-width: 600px)
+                {
+                    .uzost{display: none;}
+                    .seriy{float: right; width:70%;}
+                }
+                @media(max-width: 600px)
+                 {
+                    .shirina{display: none};
+                    .uzost{display: block;}
+                    .seriy{width:100%;}
+                 }
 
-        <div style = "float: right; position: static; width:70%; background-color: grey;">
+
+        </style>
+        <div style = "float: left; position: static; width:100%; border:2px solid; border-color: green; background-color: aqua;">
+        <div class="uzost" style="margin:20px 0px; width: 100%;background-color: bisque;">
+                    Home Hours Direction
+
+                </div>   
+        <div class="seriy" style = " background-color: grey;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis libero lacinia, dictum nulla quis, lobortis turpis. 
             Quisque auctor porta convallis. Proin vulputate placerat lectus et imperdiet. Donec pulvinar tempor posuere. 
             Fusce nibh dolor, ornare vel egestas in, condimentum vel mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
@@ -22,11 +40,12 @@
             Fusce tempus sem non nunc finibus, ultrices sollicitudin mi porttitor. Ut sed justo nisl. Sed vel metus urna. Suspendisse semper diam vel pharetra hendrerit.
             Nulla ut justo elit. Aliquam pellentesque varius venenatis. Proin eu diam sed magna congue vehicula. Praesent eu enim ut ante vulputate posuere in quis enim. 
             Integer ultrices augue rhoncus turpis pulvinar posuere.</div>
-        <div style="background-color:bisque; padding:20px ;">
+        <div class="shirina" style="background-color:bisque; padding:20px ;">
             <li>Home</li>
             <li>Hours</li>
             <li>Direction</li>
-        </div>            
+        </div>     
+            
          </div>       
     </body>
     </html>
